@@ -1,11 +1,16 @@
 from django.contrib import admin
-from django.contrib import admin
 from django.contrib.admin import ModelAdmin, AdminSite
 from django.forms import ModelForm
 from django.utils.html import format_html
-from app.models import Category, Product
 
 from app.models import Product, Category
+
+# admin.site.register(Category),
+# admin.site.register(Product)
+
+admin.site.site_header = "Panda"
+admin.site.site_title = "Admin"
+admin.site.index_title = "H_O_M_E"
 
 #-------------------------------------
 
